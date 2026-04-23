@@ -1,6 +1,6 @@
-# StockSense — AI-Powered Financial Forecasting Engine
+# StockSense - AI Powered Financial Forecasting Web App
 
-A multi-model investment decision support platform combining deep learning, statistical, and gradient boosting approaches to deliver institutional-grade stock price forecasts and risk analysis for retail investors.
+A multi-model investment decision support platform combining deep learning (generative), statistical, and gradient boosting approaches to deliver stock price forecasts and risk analysis for retail investors.
 
 
 ## Problem Addressed

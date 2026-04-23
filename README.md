@@ -2,7 +2,6 @@
 
 A multi-model investment decision support platform combining deep learning, statistical, and gradient boosting approaches to deliver institutional-grade stock price forecasts and risk analysis for retail investors.
 
----
 
 ## Problem Addressed
 
@@ -14,7 +13,6 @@ Retail investors face significant information gaps when making investment decisi
 
 StockSense solves these gaps by integrating four complementary forecasting models, quantitative performance metrics, investment ratings, and a portfolio simulator under one transparent, accessible interface.
 
----
 
 ## Proposed Solution
 
@@ -40,7 +38,6 @@ StockSense solves these gaps by integrating four complementary forecasting model
 - **Real-time data** — Integrates Yahoo Finance for historical and actual price overlays
 - **Interactive charts** — Chart.js visualisation of forecasts, confidence bands, and actual performance
 
----
 
 ## Tech Stack
 
@@ -70,7 +67,6 @@ StockSense solves these gaps by integrating four complementary forecasting model
 - **CORS**: Enabled via `flask-cors`
 - **Proxy**: React dev server proxies `/forecast`, `/simulate`, `/compare` to Flask
 
----
 
 ## Steps to Launch the Demo
 
@@ -154,7 +150,6 @@ The app works with any ticker and date range via Yahoo Finance. Recommended demo
 
 Use a 1–2 year training window for best results. If your cutoff is in the past, the simulator will show actual vs predicted performance — ideal for validating model quality.
 
----
 
 ## Key Features Walkthrough
 
@@ -188,7 +183,6 @@ MAPE score shows average prediction error on the last N days of your training wi
 - **5–15%** — Acceptable, normal caution
 - **> 15%** — Model is struggling, reduce position size
 
----
 
 ## Architecture Diagram
 
@@ -200,7 +194,7 @@ MAPE score shows average prediction error on the last N days of your training wi
 │  │ • Model selector                                │   │
 │  │ • Interactive chart (Chart.js)                  │   │
 │  │ • Investment ratings + simulator                │   │
-│  │ • Model comparison table (new)                  │   │
+│  │ • Model comparison table                        │   │
 │  └─────────────────────────────────────────────────┘   │
 └──────────────────┬──────────────────────────────────────┘
                    │ (Axios + Bearer JWT)
@@ -215,7 +209,7 @@ MAPE score shows average prediction error on the last N days of your training wi
 │  ┌──────────────────────────────────────────────────┐   │
 │  │ Forecast Routes                                  │   │
 │  │ • /forecast (single model)                      │   │
-│  │ • /compare (all 4 models on holdout)    [NEW]   │   │
+│  │ • /compare (all 4 models on holdout)            │   │
 │  │ • /simulate (backtest returns)                  │   │
 │  └──────────────────────────────────────────────────┘   │
 │  ┌──────────────────────────────────────────────────┐   │
@@ -234,7 +228,6 @@ MAPE score shows average prediction error on the last N days of your training wi
 └─────────────────────────────────────────────────────────┘
 ```
 
----
 
 ## Future Enhancements
 
@@ -243,20 +236,9 @@ MAPE score shows average prediction error on the last N days of your training wi
 - **Real news sentiment** — Integrate FinBERT for social/news sentiment scoring
 - **Custom tickers** — Allow users to add any ticker, not just the curated 8
 - **Export reports** — Generate PDF reports with forecasts, ratings, and simulator results
-- **API access** — REST endpoints for programmatic access (Pro plan)
 - **PostgreSQL migration** — Scale beyond single-file SQLite for production
-- **Paper trading** — Simulate trades without real capital before going live
 
----
 
 ## License
 
 This project is for educational and research purposes. Use at your own risk. No investment advice is implied.
-
----
-
-## Contact
-
-For questions or feedback, contact the project maintainer.
-
-**Built with ❤️ for grad school capstone, 2025.**

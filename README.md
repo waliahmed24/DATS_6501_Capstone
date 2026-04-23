@@ -78,12 +78,15 @@ Ensure you have:
 
 ### 2. Backend Setup
 ```bash
-# Navigate to project root
-cd /path/to/stocksense
+# Clone the Repository
+https://github.com/waliahmed24/DATS_6501_Capstone.git
+
+# Navigate to project root (src folder)
+cd /path/src
 
 # Create Python virtual environment
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
 
 # Install backend dependencies
 pip install -r requirements.txt
